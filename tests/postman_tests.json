@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "770fe28c-1eef-40ac-b109-55df8e3be60d",
+		"name": "Netflix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Series",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9eef5232-504f-4e94-b58e-932ba81af417",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for Series Length\", function () {",
+							"    pm.expect(jsonData.length).to.eql(10);",
+							"});",
+							"",
+							"pm.test(\"Check for 'slug' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('slug');",
+							"});",
+							"",
+							"pm.test(\"Check for 'title' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('title');",
+							"});",
+							"",
+							"pm.test(\"Check for 'description' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('description');",
+							"});",
+							"",
+							"pm.test(\"Check for 'image' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('image');",
+							"});",
+							"",
+							"pm.test(\"Check for 'genre' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('genre');",
+							"});",
+							"",
+							"pm.test(\"Check for 'seasons' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('seasons');",
+							"});",
+							"",
+							"pm.test(\"Check for 'rating' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('rating');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASEURL}}",
+					"host": [
+						"{{BASEURL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Series by Title",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "03390fc6-94b2-42ee-877d-6e0352760bb3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Check for Restaurants Length\", function () {",
+							"    pm.expect(jsonData.length).to.eql(1);",
+							"});",
+							"",
+							"pm.test(\"Check for 'slug' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('slug');",
+							"});",
+							"",
+							"pm.test(\"Check for 'slug' value\", function () {",
+							"    pm.expect(jsonData[0].slug).to.eql('money-heist');",
+							"});",
+							"",
+							"pm.test(\"Check for 'title' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('title');",
+							"});",
+							"",
+							"pm.test(\"Check for 'title' value\", function () {",
+							"    pm.expect(jsonData[0].title).to.eql('money heist');",
+							"});",
+							"",
+							"pm.test(\"Check for 'description' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('description');",
+							"});",
+							"",
+							"pm.test(\"Check for 'description' value\", function () {",
+							"    pm.expect(jsonData[0].description).to.eql('A criminal mastermind who goes by The Professor has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose.');",
+							"});",
+							"",
+							"pm.test(\"Check for 'image' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('image');",
+							"});",
+							"",
+							"pm.test(\"Check for 'image' value\", function () {",
+							"    pm.expect(jsonData[0].image).to.eql('https://wallpapercave.com/wp/wp6387533.jpg');",
+							"});",
+							"",
+							"pm.test(\"Check for 'genre' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('genre');",
+							"});",
+							"",
+							"pm.test(\"Check for 'genre' value\", function () {",
+							"    pm.expect(jsonData[0].genre).to.eql('crime,drama,action');",
+							"});",
+							"",
+							"pm.test(\"Check for 'seasons' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('seasons');",
+							"});",
+							"",
+							"pm.test(\"Check for 'seasons' value\", function () {",
+							"    pm.expect(jsonData[0].seasons).to.eql(4);",
+							"});",
+							"",
+							"pm.test(\"Check for 'rating' key\", function () {",
+							"    pm.expect(jsonData[0]).to.have.property('rating');",
+							"});",
+							"",
+							"pm.test(\"Check for 'rating' value\", function () {",
+							"    pm.expect(jsonData[0].rating).to.eql(8.4);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASEURL}}?title=money",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "money"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Series by Title with 404 Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ed1dea9-6c4e-4fa4-b0e9-fbf1eef4a35e",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASEURL}}?title=game of thrones",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "game of thrones"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1f44f3f1-10a1-4234-bb34-83080c772aad",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "81b2df68-71f4-49b7-8528-7f8d0f38a303",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
