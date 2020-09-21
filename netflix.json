@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "money-heist",
+    "title": "money heist",
+    "description": "A criminal mastermind who goes by The Professor has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose.",
+    "image": "https://wallpapercave.com/wp/wp6387533.jpg",
+    "genre": "crime,drama,action",
+    "seasons": 4,
+    "rating": 8.4
+  },
+  {
+    "slug": "lost-in-space",
+    "title": "lost in space",
+    "description": "A rip in the space-time continuum forces the Robinsons, a family of space colonists, to crash-land on an unknown planet. Now, they must battle an alien environ to escape the planet and reach safety.",
+    "image": "https://financerewind.com/wp-content/uploads/2020/06/Lost-In-Space-Season-3-5.jpg",
+    "genre": "scifi,drama,adventure",
+    "seasons": 2,
+    "rating": 7.3
+  },
+  {
+    "slug": "dark",
+    "title": "dark",
+    "description": "When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. The mystery-drama series introduces an intricate puzzle filled with twists.",
+    "image": "https://cdn.wallpapersafari.com/10/66/1u3zGZ.jpg",
+    "genre": "drama,scifi,thriller,mystery",
+    "seasons": 3,
+    "rating": 8.8
+  },
+  {
+    "slug": "ozark",
+    "title": "ozark",
+    "description": "a financial planner who relocates his family from Chicago to a summer resort community in the Ozarks. With wife Wendy and their two kids in tow, Marty is on the move after a money-laundering scheme goes wrong, forcing him to pay off a substantial debt to a Mexican drug lord in order to keep his family safe.",
+    "image": "https://miro.medium.com/max/2560/0*pxU3J5b1Wu4NQt80.jpg",
+    "genre": "crime,thriller",
+    "seasons": 3,
+    "rating": 8.4
+  },
+  {
+    "slug": "stranger-things",
+    "title": "stranger things",
+    "description": "This thrilling Netflix original drama stars Golden Globe-winning actress Winona Ryder as Joyce Byers, who lives in a small Indiana town in 1983 -- inspired by a time when tales of science fiction captivated audiences.",
+    "image": "https://wallpapercave.com/wp/wp1839582.jpg",
+    "genre": "horror,scifi,thriller",
+    "seasons": 3,
+    "rating": 8.8
+  },
+  {
+    "slug": "lucifer",
+    "title": "lucifer",
+    "description": "Lucifer, a demon, returns from hell to reside in Los Angeles and runs a club. He soon gets involved with the local police and assists them in solving tricky criminal cases.",
+    "image": "https://i.pinimg.com/originals/b8/f4/5c/b8f45c4e00148291de8eb20f0aa03300.jpg",
+    "genre": "horror,crime,mystery",
+    "seasons": 5,
+    "rating": 8.2
+  },
+  {
+    "slug": "umbrella-academy",
+    "title": "umbrella academy",
+    "description": "On one day in 1989, 43 infants are inexplicably born to random, unconnected women who showed no signs of pregnancy the day before. Seven are adopted by billionaire industrialist Sir Reginald Hargreeves, who creates the Umbrella Academy and prepares his children to save the world.",
+    "image": "https://images2.alphacoders.com/100/thumb-1920-1000886.jpg",
+    "genre": "drama,scifi,comedy",
+    "seasons": 2,
+    "rating": 8
+  },
+  {
+    "slug": "friends",
+    "title": "friends",
+    "description": "Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.",
+    "image": "https://home.adelphi.edu/~ni21572/friends_series_tv_show_actors_friendship_people_2014_3840x2160.jpg",
+    "genre": "comedy,romance",
+    "seasons": 10,
+    "rating": 8.9
+  },
+  {
+    "slug": "sherlock",
+    "title": "sherlock",
+    "description": "Dr Watson, a former army doctor, finds himself sharing a flat with Sherlock Holmes, an eccentric individual with a knack for solving crimes. Together, they take on the most unusual cases.",
+    "image": "https://images.hdqwalls.com/wallpapers/sherlock-series-4-do.jpg",
+    "genre": "srime,mystrey,comedy",
+    "seasons": 4,
+    "rating": 9.1
+  },
+  {
+    "slug": "the-crown",
+    "title": "the crown",
+    "description": "The life of Queen Elizabeth II (Claire Foy) from the 1940s to modern times. The series begins with an inside look at the early reign of the queen, who ascended the throne at age 25 after the death of her father, King George VI.",
+    "image": "https://images.wallpapersden.com/image/download/the-crown-season-2_67410_2048x1152.jpg",
+    "genre": "history,drama",
+    "seasons": 3,
+    "rating": 8.7
+  }
+]
